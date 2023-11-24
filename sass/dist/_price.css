@@ -1,0 +1,34 @@
+.price {
+  padding-top: 150px;
+}
+.price h1 {
+  color: #22343D;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+.price p {
+  margin-top: 8px;
+  text-align: center;
+  color: #22343D;
+  font-size: 16px;
+  font-weight: 500;
+}
+.price__cards {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.price__cards img {
+  max-width: 500px;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .price__cards {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
