@@ -566,3 +566,123 @@ a {
   line-height: 24px;
   letter-spacing: 0.2px;
 }
+
+.join {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #02897A;
+  padding: 20px;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 32px;
+}
+@media (min-width: 800px) {
+  .join {
+    flex-direction: row;
+  }
+}
+.join__info {
+  max-width: 480px;
+}
+.join__info h1 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 151.4%;
+}
+.join__info a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.join__image {
+  max-width: 500px;
+}
+.join__image img {
+  width: 100%;
+}
+
+.footer__logo {
+  margin-top: 40px;
+}
+.footer__logo .logos {
+  display: flex;
+  align-items: center;
+}
+.footer__logo .medias {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.footer__resource {
+  margin-top: 40px;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .footer__resource {
+    text-align: left;
+  }
+  .footer__resource h1 {
+    margin-bottom: 20px;
+  }
+  .footer__resource li {
+    margin-bottom: 18px;
+  }
+}
+.footer__resource a {
+  color: black;
+}
+.footer__stuff {
+  margin-top: 40px;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .footer__stuff {
+    text-align: left;
+  }
+  .footer__stuff h1 {
+    margin-bottom: 20px;
+  }
+  .footer__stuff li {
+    margin-bottom: 18px;
+  }
+}
+.footer__stuff a {
+  color: black;
+}
+.footer__mail {
+  margin-top: 40px;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .footer__mail {
+    margin-bottom: 18px;
+    text-align: left;
+  }
+}
+.footer__mail a {
+  margin-top: 30px;
+  color: #fff;
+  display: block;
+  padding: 8px 15px;
+  background-color: #02897A;
+  margin-bottom: 100px;
+}

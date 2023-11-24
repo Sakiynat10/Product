@@ -1,0 +1,12 @@
+.dark header {
+    background-color: black;
+}
+.dark header * {
+    color: $white-color;
+}
+.dark main {
+    background-color: black;
+}
+.dark main * {
+    color: $white-color;
+}

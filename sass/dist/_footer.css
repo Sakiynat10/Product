@@ -1,0 +1,44 @@
+.footer__logo {
+  padding-top: 150px;
+}
+.footer__logo .logos {
+  display: flex;
+  align-items: center;
+}
+.footer__logo .medias {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__resource {
+  margin-top: 40px;
+  text-align: center;
+}
+.footer__resource a {
+  color: black;
+}
+.footer__stuff {
+  margin-top: 40px;
+  text-align: center;
+}
+.footer__stuff a {
+  color: black;
+}
+.footer__mail {
+  margin-top: 40px;
+  text-align: center;
+}
+.footer__mail a {
+  margin-top: 30px;
+  color: black;
+  display: block;
+  padding: 8px 15px;
+  background-color: #fff;
+}

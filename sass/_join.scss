@@ -5,8 +5,18 @@
     align-items: center;
     justify-content: center;
     background-color: $primary-color;
+    padding: 20px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 32px;
+
+    @media(min-width:800px){
+        flex-direction: row;
+    }
 
     &__info {
+        max-width: 480px;
         h1 {
             color: #FFF;
             font-size: 32px;
@@ -15,11 +25,18 @@
         }
 
         a {
-            color: #02897A;
+            color: #fff;
             font-size: 20px;
             font-weight: 600;
         }
 
-        
+
+    }
+
+    &__image {
+        max-width: 500px;
+        img{
+            width: 100%;
+        }
     }
 }
