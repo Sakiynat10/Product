@@ -1,83 +1,136 @@
-.home{
-    padding-top: 25px;
+#home{
+    padding-top: 120px;
 
-    &__left{
-        h1{
-            color: $secondary-color;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 60px;
-            text-align: center;
-        }
+    
+}
 
-        p{
-            padding-top:18px;
-            color: $secondary-color;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 28px;
-            text-align: center;
-        }
-        
-        .home__btns{
-            padding-top: 45px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 18px;
-            button{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                justify-content: center;
-                height: 53px;
-                width: 175px;
-                border-radius: 4px;
-                border: 2px solid $primary-color;
-                background-color: $white-color;
 
-                a{
-                    color: $secondary-color;
-                }
 
-                &:hover{
-                    background-color: $primary-color;
-                    color: $white-color;
-                    a{
-                        color: $white-color;
-                    }
-                }
-            }
-        }
-        
+
+.home__left{
+    h1{
+        text-align: center;
+        color: var(--, #333);
+        font-family: Manrope;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 60px;
     }
 
-
-    &__right{
-        padding-top: 18px;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 514px;
-        img{
-            width: 100%;
-        }
+    p{
+        margin-top: 20px;
+        text-align: center;
+        color: var(--, #333);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
     }
 
-    @media(min-width: 800px){
+    a{
+        padding: 14px 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: $grey-color;
+        border-radius: 20px;
+        display: block;
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    
+}
+
+.home__right{
+    margin-top: 50px;
+    img{
+        width: 100%;
+    }
+}
+
+.home-container{
+    @media(min-width: 800px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        &__left{
-            width: 458px;
-            h1,p{
-                text-align: left;
-            }
-
-            .home__btns{
-                flex-direction: row;
+        home__left{
+            width: 500px;
+            
+    
+            a{
+                display: inline-block;
             }
         }
+    
+        .home__right{
+            width: 100%;
+        }
 
+        
+    }
+
+    
+}
+
+.home__bottom{
+    margin-top: 150px;
+    h2{
+        color: #333;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;  
+    }
+
+    &-statistics{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: start;
+        font-family: Manrope;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 48px;
+        margin-top: 30px;
+
+        .statistic{
+            margin-top: 50px;
+
+            h1{
+                background:linear-gradient(115deg, #FFBC2A 16.38%, #FF4F39 95.45%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p{
+                color: #333;
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width:800px){
+    .home__bottom-statistics{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 }
